@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtConfirmInitial"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/family_member_florosent_blue"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="center"
+            android:maxLength="1"
+            android:text="R"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/relConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/txtConfirmInitial">
+
+            <TextView
+                android:id="@+id/txtConfirmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_sans"
+                android:text="Rupam Mishra"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtConfirmRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtConfirmName"
+                android:fontFamily="@font/fira_sans"
+                android:gravity="center"
+                android:text="Cousin"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/txtConfirmPatientID"
+                android:fontFamily="@font/fira_sans"
+                android:text="Patient ID: "
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtConfirmPatientID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/fira_sans"
+                android:gravity="center"
+                android:text="2548 "
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtCancleToken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtConfirmPatientID"
+                android:fontFamily="@font/fira_sans"
+                android:text="Cancel Token "
+                android:textColor="@color/cancel"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtConfirmTokenInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtConfirmInitial"
+            android:layout_margin="11dp"
+            android:fontFamily="@font/fira_sans_light"
+            android:gravity="center"
+            android:text="Token No"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtConfirmTokenView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConfirmTokenInfo"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="@color/token"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/txtConfirmEstimatedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relConfirm"
+            android:layout_margin="11dp"
+            android:layout_toRightOf="@+id/txtConfirmTokenInfo"
+            android:fontFamily="@font/fira_sans_light"
+            android:text="Estimated Reporting Time"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtConfirmEstimatedTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtConfirmEstimatedTime"
+            android:layout_below="@+id/txtConfirmTokenInfo"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/fira_sans"
+            android:text="4:45 PM"
+            android:textColor="@color/token"
+            android:textSize="28sp" />
+
+        <View
+            android:id="@+id/viewConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtConfirmEstimatedTimeView"
+            android:layout_margin="10dp"
+            android:background="@color/separator_color" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewConfirm"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtConfirmCurrentToken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_sans"
+                android:padding="5dp"
+                android:text="Current Token"
+                android:textColor="@color/txtcolor"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtConfirmCurrentView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/fira_sans_medium"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="36/50"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/viewConfirm1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtConfirmCurrentView"
+                android:layout_margin="15dp"
+                android:background="@color/view" />
+
+
+            <TextView
+                android:id="@+id/txtConfirmDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewConfirm1"
+                android:fontFamily="@font/fira_sans"
+                android:padding="5dp"
+                android:text="Doctor"
+                android:textColor="@color/txtcolor"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtConfirmDoctorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/viewConfirm1"
+                android:fontFamily="@font/fira_sans_medium"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="Dr. Rahul Dubey"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/viewConfirm2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtConfirmDoctorView"
+                android:layout_margin="15dp"
+                android:background="@color/view" />
+
+
+            <TextView
+                android:id="@+id/txtConfirmClinic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewConfirm2"
+                android:fontFamily="@font/fira_sans"
+                android:padding="5dp"
+                android:text="Clinic"
+                android:textColor="@color/txtcolor"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtConfirmClinicView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/viewConfirm2"
+                android:fontFamily="@font/fira_sans_medium"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="Navnangpura Cross Road"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/backcolor" />
+</LinearLayout>

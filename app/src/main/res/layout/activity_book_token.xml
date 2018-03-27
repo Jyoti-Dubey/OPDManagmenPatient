@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/llTopBar"
+        layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTopBar"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Branch-->
+            <RelativeLayout
+                android:id="@+id/relSelectBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgMap"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/branch_default_ico" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ico_right_indicator" />
+
+                <TextView
+                    android:id="@+id/txtSelectBranchHeading"
+                    style="@style/BookTokenHeading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgMap"
+                    android:text="Select Branch" />
+
+                <TextView
+                    android:id="@+id/txtSelectBranch"
+                    style="@style/BookTokenValue"
+                    android:layout_below="@id/txtSelectBranchHeading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgMap"
+                    android:text="Select Branch" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/separator_color" />
+
+            <!--Doctor selection-->
+            <RelativeLayout
+                android:id="@+id/relSelectDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgDoctor"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/user_default_pic_large" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ico_right_indicator" />
+
+                <TextView
+                    android:id="@+id/txtSelectDoctorHeading"
+                    style="@style/BookTokenHeading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgDoctor"
+                    android:text="Select Doctor" />
+
+                <TextView
+                    android:id="@+id/txtSelectDoctor"
+                    style="@style/BookTokenValue"
+                    android:layout_below="@id/txtSelectDoctorHeading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgDoctor"
+                    android:text="Select Docotr" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/separator_color" />
+
+
+            <!--Time slot-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgTimeSlot"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/time_default_ico" />
+
+                <TextView
+                    android:id="@+id/txtTimingsHeading"
+                    style="@style/BookTokenHeading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgTimeSlot"
+                    android:text="Time Slot" />
+
+
+                <TextView
+                    android:id="@+id/txtTimeSlot1"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTimingsHeading"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/imgTimeSlot"
+                    android:background="@drawable/booktokenborder"
+                    android:drawableLeft="@drawable/time_active"
+                    android:gravity="left|center"
+
+                    android:text="9AM to 1PM"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/txtTimeSlot2"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTimingsHeading"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/txtTimeSlot1"
+                    android:background="@drawable/booktokenbordergray"
+                    android:drawableLeft="@drawable/time_active"
+                    android:gravity="left|center"
+                    android:text="5PM to 9PM"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/separator_color" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/backcolor" />
+
+            <!--Visit type layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/BookTokenHeading"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgMap"
+                    android:text="Select Your Visit Type" />
+
+                <LinearLayout
+                    android:id="@+id/llVisitType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/separator_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:text="Estimated Reporting time"
+                android:textColor="@color/token_branch"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txtEstimatedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:gravity="left"
+                android:text="4:45"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBookToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+

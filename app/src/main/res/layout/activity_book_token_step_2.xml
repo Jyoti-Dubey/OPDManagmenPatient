@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.css.opdpatient.activity.BookTokenStep_2Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llbook2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/top_bar" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCurrentStatus"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/llbook2"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/fira_sans_medium"
+            android:gravity="center"
+            android:text="Current Status : 25/50"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtCurrentStatus"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgBookToken2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:src="@drawable/family" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@+id/imgBookToken2"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtName"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:drawableRight="@drawable/radiobtn_brother"
+                                android:fontFamily="@font/fira_sans_medium"
+                                android:gravity="center|left"
+                                android:text="Satyam Dubey"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fira_sans"
+                                android:gravity="center"
+                                android:text="Self"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtFam"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/BookToken2"
+                    android:fontFamily="@font/fira_sans_medium"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="FAMILY MEMBERS"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/llInflateBookToken2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtFam"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" />
+
+                <!-- <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="5dp"
+                     android:background="@color/white">
+
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/recyclerBookToken2"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentStart="true"
+                         android:layout_alignParentTop="true"
+                         android:scrollbars="vertical" />
+                 </RelativeLayout>-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnBookToken2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/book_token_step_2"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="center"
+            android:text="Book Now"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor"
+    tools:context="com.css.opdpatient.activity.VisitsDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/txtVisitDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/txtVisitDetailDate"
+                        android:layout_alignBottom="@+id/txtVisitDetailDate"
+                        android:layout_alignStart="@+id/txtVisitDetailID"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Visited on : "
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtVisitDetailDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@+id/txtVisitDetail"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="12 Jan,2108"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtVisitDetailID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtVisitDetail"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Patient ID : "
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtVisitDetailPatientID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtVisitDetail"
+                        android:layout_toRightOf="@+id/txtVisitDetailID"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="2548"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/Vitals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Vitals"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/llVisitPatient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Vitals"
+                        android:background="@color/white"
+                        android:orientation="horizontal" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/txtVisitDetailPrescrib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Medicine Prescription"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtVisitDetailPrescrib1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtVisitDetailPrescrib"
+                        android:drawableLeft="@drawable/ico_point_list"
+                        android:fontFamily="@font/fira_sans"
+                        android:gravity="left|center"
+                        android:text="Tab Abciximab 500 MG"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/txtVisitDetailPrescrib2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtVisitDetailPrescrib1"
+                        android:layout_marginBottom="10dp"
+                        android:drawableLeft="@drawable/ico_point_list"
+                        android:fontFamily="@font/fira_sans"
+                        android:gravity="left|center"
+                        android:text="Cab Baraclude"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtVisitDetailPrescrib1"
+                    android:fontFamily="@font/fira_sans"
+                    android:padding="18dp"
+                    android:text="LAB TEST"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/llVisitLab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/separator_color">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/txtVisitLabTestName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Blood Test"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/txtVisitLab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="john's Lab"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnVisitLabTest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_margin="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/reports_detail_button"
+                                android:drawableTop="@drawable/add_photos"
+                                android:paddingTop="15dp"
+                                android:text="Photos"
+                                android:textAllCaps="false"
+                                android:textColor="@color/grey"
+                                android:textSize="18sp" />
+
+                            <HorizontalScrollView
+                                android:id="@+id/horizontalscrollLabTest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:measureAllChildren="false"
+                                android:scrollbars="none">
+
+                                <LinearLayout
+                                    android:id="@+id/llInflateImageLabTest"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal" />
+
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separator_color" />
+
+                <!--<LinearLayout
+                    android:id="@+id/llVisitLab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/separator_color">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/txtVisitLabTestName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Lipid Profile Test"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/txtVisitLab2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:text="john's Lab"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnVisitLabTest2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_margin="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/reports_detail_button"
+                                android:drawableTop="@drawable/add_photos"
+                                android:paddingTop="15dp"
+                                android:text="Photos"
+                                android:textAllCaps="false"
+                                android:textColor="@color/grey"
+                                android:textSize="18sp" />
+
+                            <HorizontalScrollView
+                                android:id="@+id/horizontalscrollLabTest2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:measureAllChildren="false"
+                                android:scrollbars="none">
+
+                                <LinearLayout
+                                    android:id="@+id/llInflateImageLabTest2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal" />
+
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>-->
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/txtVisitDetailPrescrib1"
+                     android:fontFamily="@font/fira_sans"
+                     android:padding="15dp"
+                     android:text="RADIOLOGY"
+                     android:textColor="@color/grey"
+                     android:textSize="18sp" />
+
+                 <LinearLayout
+                     android:id="@+id/llReportsDetail"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@color/separator_color">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:background="@color/white"
+                         android:orientation="vertical"
+                         android:padding="15dp">
+
+                         <TextView
+                             android:id="@+id/txtVisitTestName"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/fira_sans"
+                             android:gravity="center|left"
+                             android:paddingLeft="10dp"
+                             android:text="MRI"
+                             android:textColor="@color/black"
+                             android:textSize="17sp" />
+
+                         <TextView
+                             android:id="@+id/txtVisitLabName"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/fira_sans"
+                             android:gravity="center"
+                             android:paddingLeft="10dp"
+                             android:text="john's Lab"
+                             android:textColor="@color/grey"
+                             android:textSize="15sp" />
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_margin="10dp"
+                             android:orientation="horizontal">
+
+                             <Button
+                                 android:id="@+id/btnVisit1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="90dp"
+                                 android:layout_margin="5dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_marginTop="20dp"
+                                 android:background="@drawable/reports_detail_button"
+                                 android:drawableTop="@drawable/add_photos"
+                                 android:paddingTop="15dp"
+                                 android:text="Photos"
+                                 android:textAllCaps="false"
+                                 android:textColor="@color/grey"
+                                 android:textSize="18sp" />
+
+                             <HorizontalScrollView
+                                 android:id="@+id/horizontalscrollView"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:measureAllChildren="false"
+                                 android:scrollbars="none">
+
+                                 <LinearLayout
+                                     android:id="@+id/llInflateImage"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_margin="5dp"
+                                     android:orientation="horizontal" />
+
+                             </HorizontalScrollView>
+                         </LinearLayout>
+                     </LinearLayout>
+                 </LinearLayout>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/fira_sans"
+                     android:padding="15dp"
+                     android:text="RFERANCE"
+                     android:textColor="@color/grey"
+                     android:textSize="18sp" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@color/separator_color">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:background="@color/white"
+                         android:orientation="vertical"
+                         android:padding="15dp">
+
+                         <TextView
+                             android:id="@+id/txtVisitReferance"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/fira_sans"
+                             android:gravity="center|left"
+                             android:paddingLeft="10dp"
+                             android:text="Skin Disease"
+                             android:textColor="@color/black"
+                             android:textSize="17sp" />
+
+                         <TextView
+                             android:id="@+id/txtVisitReferanceLabName"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:fontFamily="@font/fira_sans"
+                             android:gravity="center"
+                             android:paddingLeft="10dp"
+                             android:text="john's Lab"
+                             android:textColor="@color/grey"
+                             android:textSize="15sp" />
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_margin="10dp"
+                             android:orientation="horizontal">
+
+                             <Button
+                                 android:id="@+id/btnVisit2"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="90dp"
+                                 android:layout_margin="5dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_marginTop="20dp"
+                                 android:background="@drawable/reports_detail_button"
+                                 android:drawableTop="@drawable/add_photos"
+                                 android:paddingTop="15dp"
+                                 android:text="Photos"
+                                 android:textAllCaps="false"
+                                 android:textColor="@color/grey"
+                                 android:textSize="18sp" />
+
+                             <HorizontalScrollView
+                                 android:id="@+id/horizontalscrollReferance"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:measureAllChildren="false"
+                                 android:scrollbars="none">
+
+                                 <LinearLayout
+                                     android:id="@+id/llInflateReferance"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_margin="5dp"
+                                     android:orientation="horizontal" />
+
+                             </HorizontalScrollView>
+                         </LinearLayout>
+                     </LinearLayout>
+                 </LinearLayout>
+ -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fira_sans"
+                    android:padding="15dp"
+                    android:text="PAYMENT INFORMATION"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relVisitPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txtVisitPrevious"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="Previous "
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtVisitPreviousView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="15dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="100"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txtVisitPreviousView"
+                            android:background="@color/separator_color" />
+
+                        <TextView
+                            android:id="@+id/txtVisitDue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view1"
+                            android:layout_margin="15dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="Due"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtVisitDueView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/view1"
+                            android:layout_margin="15dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="90"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txtVisitDueView"
+                            android:background="@color/separator_color" />
+
+                        <TextView
+                            android:id="@+id/txtVisitPaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view2"
+                            android:layout_margin="15dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="Paid"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtVisitPaidView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/view2"
+                            android:layout_margin="15dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="70"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txtVisitPaidView"
+                            android:background="@color/separator_color" />
+
+                        <TextView
+                            android:id="@+id/txtVisitRemaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view3"
+                            android:layout_margin="15dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="Remaining"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtVisitRemainingView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/view3"
+                            android:layout_margin="15dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="90"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/txtVisitRemainingView"
+                            android:background="@color/separator_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relVisitPayment"
+                    android:fontFamily="@font/fira_sans"
+                    android:padding="15dp"
+                    android:text="NEXT FOLLOW UP"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/txtVisitsDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/fira_sans"
+                        android:paddingLeft="10dp"
+                        android:text="Wednessday  , 23 March 2018 "
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

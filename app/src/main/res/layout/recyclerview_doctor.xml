@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imgDoctorImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/fira_sans"
+        android:gravity="center"
+        android:maxLength="1"
+        android:src="@drawable/ico_booktoken"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/imgDoctorImage">
+
+        <TextView
+            android:id="@+id/txtDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/radiobtn_inactive"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="left|center"
+            android:text="Dr Rahul Dubey"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtDoctorSpecialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDoctorName"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="center"
+            android:text="Neurologists"
+            android:textColor="@color/grey"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator_color" />
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="Dashboard"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="Patient Visit"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="Queue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="My Patient"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="Album"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/separator_color"/>
+
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="Branches"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="Department"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="My Staff"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/separator_color"/>
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="Reports"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="My Accounts"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color"/>
+
+        <TextView
+            style="@style/SliderTextStyle"
+            android:text="Logout"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

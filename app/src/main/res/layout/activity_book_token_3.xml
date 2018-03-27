@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.css.opdpatient.activity.BookToken_3Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lineartopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/top_bar" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/Booktoken3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/txtBook3Initial"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/family_member_florosent_blue"
+                    android:fontFamily="@font/fira_sans"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:text="A"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relBook3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/txtBook3Initial">
+
+                    <TextView
+                        android:id="@+id/txtBook3Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Raushni Dubey"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/txtBook3Relation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtBook3Name"
+                        android:fontFamily="@font/fira_sans"
+                        android:gravity="center"
+                        android:text="Sister"
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtBook3Name"
+                        android:layout_toStartOf="@+id/txtBook3PatientID"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Patient ID: "
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtBook3PatientID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/txtBook3Relation"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/fira_sans"
+                        android:gravity="center"
+                        android:text="2856 "
+                        android:textColor="@color/grey"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtTokenInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtBook3Relation"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Your Token Number"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtBook3Token"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_below="@+id/txtTokenInfo"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/book_token3"
+                        android:fontFamily="@font/fira_sans_light"
+                        android:gravity="center"
+                        android:text="40"
+                        android:textColor="@color/token"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/txtEstimated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtBook3Token"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="Estimated Reporting Time"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/txtBook3EstimatedTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtEstimated"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="2:45 PM"
+                        android:textColor="@color/token"
+                        android:textSize="30sp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/viewBook3"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/relBook3"
+                    android:background="#f3f7fa" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/viewBook3"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txtBook3Doctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Doctor"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtBook3DoctorView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="Dr. Neha dubey"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:id="@+id/viewBookT3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txtBook3Doctor"
+                        android:layout_margin="15dp"
+                        android:background="@color/view" />
+
+
+                    <TextView
+                        android:id="@+id/txtBook3Clinic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewBookT3"
+                        android:padding="5dp"
+                        android:text="Clinic"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtBook3ClinicView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/viewBookT3"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="Gujarat High Court"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@color/token"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

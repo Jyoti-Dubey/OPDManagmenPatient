@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueicon_bg"
+    tools:context="com.css.opdpatient.activity.RegisterActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/fira_sans" />
+
+    </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/imgPatientLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/login_logo" />
+
+
+            <RelativeLayout
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="110dp"
+                android:padding="15dp">
+
+
+                <!-- <LinearLayout
+                     android:id="@+id/relativePatientLogin"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/imgPatientLogin"
+                     android:layout_marginTop="0dp"
+                     android:orientation="vertical"
+                     android:padding="15dp">-->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardviewPatientLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearPatientLogin1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/fira_sans_medium"
+                            android:paddingTop="10dp"
+                            android:text="Register Now"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:drawableLeft="@drawable/ico_small_warning"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="If you do not have patient id then you can collect it from clinic ."
+                            android:textColor="@color/grey"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ico_patient_id" />
+
+                            <EditText
+                                android:id="@+id/edtPatientID"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/fira_sans"
+                                android:hint="Enter Patient ID"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:padding="10dp"
+                                android:textColorHint="@color/loginedt"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/separator_color" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:paddingLeft="15dp"
+                            android:text="Set your credentials"
+                            android:textColor="@color/loginForgotPass"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ico_username" />
+
+                            <EditText
+                                android:id="@+id/edtUsername"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/fira_sans"
+                                android:hint="Enter Mobile No.(Username)"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:padding="10dp"
+                                android:textColorHint="@color/loginedt"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/separator_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ico_lock_pass" />
+
+                            <in.anshul.libray.PasswordEditText
+                                android:id="@+id/edtPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/fira_sans"
+                                android:hint="Set Your Password"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:maxLength="8"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:textColorHint="@color/loginedt"
+                                android:textSize="16sp"
+                                app:hide_drawable="@drawable/ico_showpw"
+                                app:password_visible="false"
+                                app:show_drawable="@drawable/ico_hidepw" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/viewpassword"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+
+                            android:background="@color/separator_color" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="9dp">
+
+                            <Button
+                                android:id="@+id/btnRegister"
+                                android:layout_width="120dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/patient_login_button_shape"
+                                android:fontFamily="@font/fira_sans"
+                                android:text="REGISTER"
+                                android:textColor="@color/white"
+                                android:textColorHighlight="@color/separator_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtAlreadyMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtLoginNow"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/fira_sans"
+        android:text="Already member?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtLoginNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/fira_sans"
+        android:text="Login Now"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

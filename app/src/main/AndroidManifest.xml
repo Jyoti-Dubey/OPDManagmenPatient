@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.css.opdpatient">
+
+    <!-- Internter pemission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".activity.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/ico_regularvisit"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateUnspecified|stateHidden" />
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.BookTokenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FamilyListingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddFamilyMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.FamilyMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BookTokenStep_2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BookToken_3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyReportsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReportsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.VarificationActivity" />
+        <activity android:name=".activity.VisitsActivity" />
+        <activity android:name=".activity.VisitsDetailActivity" />
+        <activity android:name=".activity.SelectBranchActivity" />
+        <activity android:name=".activity.SelectDoctorActivity" />
+        <activity android:name=".activity.ConfirmTokenActivity" />
+        <activity android:name=".activity.MyAccountActivity" />
+        <activity android:name=".activity.PersonalInformationActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity android:name=".activity.BranchVisitActivity"></activity>
+    </application>
+
+</manifest>

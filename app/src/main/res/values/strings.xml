@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">OPDManagmentPatient</string>
+
+
+    <!--ALL TOP BAR TEXT WILL BE DECLARED HERE-->
+    <string name="top_dashboard">Dashboard</string>
+    <string name="top_booktoken">Book Token</string>
+    <string name="top_addfamilymember">Add Family Member</string>
+    <string name="top_familylisting">Family Member</string>
+    <string name="top_familymember">Family Member</string>
+    <string name="top_booktoken3">Token Confirmed</string>
+    <string name="top_booktoken2">Select Patient</string>
+    <string name="top_myreports">My Reports</string>
+    <string name="top_reportsdetail">Reports Detail</string>
+    <string name="top_Visits">Visits</string>
+    <string name="top_Branch">Select Branch</string>
+    <string name="top_Doctor">Select Doctor</string>
+    <string name="top_MyAcount">My Account</string>
+    <string name="top_EditAcount">Edit Profile</string>
+    <string name="top_Navrngpura">Navrangpura Cross Road</string>
+
+    <string name="top_VisitDetail">Rahul Dubey</string>
+
+    <!--To call API -->
+    <string name="CODE_URL">http://192.168.1.200/opd/api/patient/</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello First slide!</string>
+    <string name="slide_2_title">Hello Second!</string>
+    <string name="slide_3_title">Hello Third!</string>
+    <string name="slide_4_title">Hello Forth!</string>
+
+    <!-- Login Activity-->
+    <string name="mobileno">Mobile No.(Username)</string>
+    <string name="password">Password</string>
+
+    <!--Register1 Activity-->
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>Mobileno
+
+    <!--Register2 activity-->
+    <string name="Mobileno">Mobile Number</string>
+    <!--<string name="Entermobileno">Enter Mobile No</string>-->
+
+    <!--Register4 Activity-->
+    <string name="Password">Password</string>
+    <string name="dob">Date of Birth</string>
+
+    <string name="spinner2">Dr.Frank Howard</string>
+
+    <!--Reports Detail-->
+
+</resources>

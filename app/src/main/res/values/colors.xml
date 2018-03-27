@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1183d2</color>
+    <color name="colorPrimaryDark">#1892e7</color>
+    <color name="colorAccent">#1183d2</color>
+    <color name="grey">#5e6d7d</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="helptext">#0d3359</color>
+    <color name="loginNotMember">#05687c</color>
+    <color name="loginForgotPass">#47808c</color>
+    <color name="loginedt">#0a1826</color>
+
+    <color name="separator_color">#e7e7e7</color>
+    <color name="firstname">#5e6d7d</color>
+    <color name="female">#194461</color>
+    <color name="space">#f3f7fa</color>
+    <color name="OTP">#03ae28</color>
+    <color name="token">#1fbd8b</color>
+
+
+    <color name="florosent_blue">#0bc5c7</color>
+    <color name="yellow">#E6AB3A</color>
+    <color name="purple">#6675C2</color>
+    <color name="violet">#A576DB</color>
+    <color name="green">#17c734</color>
+
+
+    <color name="offwhite">#FEFBF7</color>
+    <color name="temp">#FFFF9B37</color>
+
+    <color name="dashboardToken">#a7ffac37</color>
+
+
+    <color name="helpdescription">#547395
+    </color>
+    <color name="person">#FFD6D3D3</color>
+    <color name="text">#95a2ab</color>
+
+    <color name="red">#8f6f6f</color>
+    <color name="cancel">#e10e0e</color>
+
+    <color name="token_branch">#5889a5</color>
+    <color name="Booktoken3">#f3f7fa</color>
+    <color name="booktoken3">#10a5e2</color>
+    <color name="ButtonBook3">#10be7b</color>
+    <color name="txtcolor">#40606f</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#d4d8de</color>
+    <color name="bg_screen2">#d4d8de</color>
+    <color name="bg_screen3">#d4d8de</color>
+    <color name="bg_screen4">#d4d8de</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d4d8de</color>
+    <color name="dot_dark_screen2">#d4d8de</color>
+    <color name="dot_dark_screen3">#d4d8de</color>
+    <color name="dot_dark_screen4">#d4d8de</color>
+    <color name="backcolor">#ebeff2</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#13b1d2</color>
+    <color name="dot_light_screen2">#13b1d2</color>
+    <color name="dot_light_screen3">#13b1d2</color>
+    <color name="dot_light_screen4">#13b1d2</color>
+
+
+    <!--Family Listing-->
+    <color name="start">#90bae9</color>
+    <color name="end">#1183d2</color>
+    <color name="textColor">#041632</color>
+    <color name="txtColor">#5e6d7d</color>
+
+
+    <color name="swipe">#13b1d2</color>
+    <color name="Mobilno">#5e6d7d</color>
+    <color name="name">#0a1826</color>
+    <color name="forgetpass">#47808c</color>
+    <color name="registernow">#05687c</color>
+
+    <color name="BookToken2">#e2eff2</color>
+
+    <color name="branches">#8fa4b4</color>
+    <color name="dashboard">#0a1826</color>
+    <color name="view">#e3e3e3</color>
+    <color name="screenbackground">#f3f7fa</color>
+    <color name="edtOTP">#edf2f7</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+</resources>

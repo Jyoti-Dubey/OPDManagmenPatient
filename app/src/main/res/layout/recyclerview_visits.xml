@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtVisitsInitial"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/family_member_florosent_blue"
+        android:fontFamily="@font/fira_sans"
+        android:gravity="center"
+        android:maxLength="1"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relVisits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txtVisitsInitial">
+
+        <TextView
+            android:id="@+id/txtVisitsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ico_nevigator"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="center|left"
+            android:text="Paul Gibson"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtVisitsRelation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVisitsName"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="center"
+            android:text="Father"
+            android:textColor="@color/grey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtVisitsDate"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtVisitsRelation"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="center"
+            android:text="12 Feb,2018 "
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relVisits"
+        android:layout_marginTop="20dp"
+        android:background="@color/separator_color" />
+
+</RelativeLayout>

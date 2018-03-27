@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueicon_bg"
+    tools:context="com.css.opdpatient.activity.VarificationActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgVarification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/login_logo" />
+
+        <RelativeLayout
+            android:id="@+id/relativePatientLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgVarification"
+            android:padding="15dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewPatientLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtVarify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/fira_sans_medium"
+                        android:gravity="center"
+                        android:text="OTP Verification"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtVarify2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtVarify"
+                        android:layout_margin="15dp"
+                        android:fontFamily="@font/fira_sans"
+                        android:gravity="center"
+                        android:text="Please type the verification Code sent to"
+                        android:textColor="@color/Mobilno"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/llVarify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtVarify2"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/edtVarify1"
+                            style="@style/OTPEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/edtVarify2"
+                            style="@style/OTPEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/edtVarify3"
+                            style="@style/OTPEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/edtVarify4"
+                            style="@style/OTPEditTextStyle" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnVarification"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_alignStart="@+id/txtVarify2"
+                        android:layout_below="@+id/llVarify"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/patient_login_button_shape"
+                        android:fontFamily="@font/fira_sans"
+                        android:text="SUBMIT"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnVarification"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:id="@+id/txtValid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="Valid for : "
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/txtOTP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="@font/fira_sans"
+                            android:gravity="right"
+                            android:hint="Resend OTP?"
+                            android:textSize="15sp" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
